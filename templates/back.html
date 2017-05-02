@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Inconsolata|Hind" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <title>Lob.com Sample 4x6 Postcard Front!</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 6.25in;
+      height: 4.25in;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+    }
+
+    .image {
+      position: absolute;
+      width: 180px;
+      left: 50px;
+    }
+    
+    .slogan {
+      font-family: 'Love Ya Like A Sister', cursive;
+      font-size: 26px;
+      left: 110px;
+      top: 10px;
+      position: relative;
+    }
+    .sub-slogan {
+      font-family: 'Love Ya Like A Sister', cursive;
+      fonst-size: 10px;
+      left: 110px;
+      top: 10px;
+      position: relative;
+    }
+
+    .code {
+      display: inline-block;
+      margin: 10px;
+      position: relative;
+      top: 150px;
+      font-family: 'Inconsolata', monospace;
+      font-weight: 400;
+      font-size: 20px;
+      color: #000;
+      left: 40px;
+      top: 10px;
+    }
+
+    .text {
+      display: inline-block;
+      top: 10px;
+      font-family: 'Hind', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000;
+      left: 50px;
+      position: relative;
+    }
+
+    .map {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      bottom: -65px;
+      left: -.1875in;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="safe-area">
+    <div class="slogan">
+      Try the new &quot;Haightful Eight&quot;!  
+    </div>
+    <div class='sub-slogan'>
+        (8 tasty ingrediants to Ashbury your face into)
+      </div>
+    <!-- All text should appear within the safe area. -->
+    <div class="text">
+      {{name}}, visit today with your 20% Discount:
+    </div>
+    <div class="code">
+    {{code}}
+    </div>
+    <img class="map" src='{{map_url}}' />
+  </div>
+</body>
+
+</html>

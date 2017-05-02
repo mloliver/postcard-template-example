@@ -1,0 +1,16 @@
+{
+	"lob_api_key": "test_b454ebc5d65d11db5fcd660830a50affe16",
+	"google_maps_api_key": "AIzaSyAD4BqlukU0tTE5H9REgqHFO1wWbsCrlh0",
+	"google_short_url_api_key": "AIzaSyDu9zP893KBQm-_470jCAQfQv1kdA7dsik",
+	"template_front": "tmpl_95f77a2c93db2ab",
+	"template_back": "tmpl_44bef3e8b3340ce",
+	"postcard_size": "4x6",
+	"postcard_description": "Haightful Eight Promotion",
+	"from_name": "Bob's Sandwiches",
+	"from_address1": "800 Haight St.",
+	"from_address_city": "San Francisco",
+	"from_address_state": "CA",
+	"from_address_zip": "94117",
+	"google_map_width": "250",
+	"google_map_height": "250"
+}

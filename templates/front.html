@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <title>Lob.com Sample 4x6 Postcard Front!</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family:"Bob\'s Burgers";
+        src: url("https://s3-us-west-2.amazonaws.com/lob-demos/node_postcard_Demo/bobsburgers.ttf") format('truetype');
+    }
+    
+    body {
+      width: 6.25in;
+      height: 4.25in;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #safe-area {
+      position: absolute;
+      width: 5.875in;
+      height: 3.875in;
+      left: 0.1875in;
+      top: 0.1875in;
+    }
+
+    .background-image {
+      width: 6.25in;
+      height: 4.25in;
+      position: absolute;
+      z-index: -1;
+      top: -.25in;
+      left: -.25in;
+    }
+
+    .logo-image {
+      position: relative;
+      top: 10px;
+      left: 10px;
+    }
+    
+    .logo-container {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 530px;
+      height: 100px;
+      background-color: #f4df42;
+      border-color: #f44c41;
+      border-width: 10px;
+      border-style: solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="safe-area">
+  <div class='logo-container'>
+    <img class='logo-image' src='https://s3-us-west-2.amazonaws.com/lob-demos/node_postcard_Demo/bobs_sandwiches_logo.png' />
+  </div>
+    
+    <img class='background-image' src='https://s3-us-west-2.amazonaws.com/lob-demos/node_postcard_Demo/tasty-sandwich.jpg' />
+  </div>
+</body>
+
+</html>
