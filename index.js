@@ -1,9 +1,10 @@
 /**
-  * @index.js
+  * @file index.js
   * Lob.com Customized Postcard Demo Node Program
 
   * @author Scott Hasbrouck <scott@lob.com>
   * @copyright Lob, Inc. 2017
+  * @licence MIT
 */
 
 "use strict";
@@ -37,7 +38,8 @@ var CONFIG = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
 // Lob's Node module
 var Lob = require('lob')(CONFIG.lob_api_key);
 
-// format origin address from CONFIG file
+// Object literal of the origin address in the Lob address object format
+// values provided by the CONFIG file
 var bobSandwichesAddress = {
 	name: CONFIG.from_name,
 	address_line1: CONFIG.from_address1,
@@ -47,7 +49,8 @@ var bobSandwichesAddress = {
 };
 
 
-// Array of the inputs to collect from the prompt
+// Array of all of the inputs we want to collect at the prompt.
+// in a real Node application, these values would be provided by an event based trigger
 var inputs = [
 	'name',
 	'address_line1',
@@ -63,7 +66,7 @@ prompt.get(inputs, function(err, customerAddress) {
 
 	// Invoke the utility function to generate the google maps
 	// directions between the customer to Bob's Sandwiches
-	utils.getDirectionsPaths(customerAddress, bobSandwichesAddress)
+	utils.getDirectionsPath(customerAddress, bobSandwichesAddress)
 
 	// Generate the static image google maps URL and URL shortner
 	// (note: we must use a URL shortner, because we'll be passing the google maps URL

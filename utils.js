@@ -1,3 +1,13 @@
+/**
+  * @module utils.js
+  * Google Maps utility functions for Lob postcard demo
+  *
+  * @author Scott Hasbrouck <scott@lob.com>
+  * @copyright Lob, Inc. 2017
+  * @licence MIT
+  *
+  * @exports utils
+  */
 
 //  ========== 3rd Party Dependencies ==========
 // Node library for making HTTP requests with Promise support
@@ -5,7 +15,7 @@ var axios = require('axios');
 
 // Library for URL encoding strings
 var urlencode = require('urlencode');
-// ========== End 3rd Party dependencies ==========
+// ========== End 3rd Party Dependencies ==========
 
 // Node's file I/O module
 var fs = require('fs');
@@ -15,7 +25,7 @@ var CONFIG = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
 
 var utils = {
 	/**
-	  * Converts an address object to a string for google maps
+	  * @function addressToString - Converts an address object to a string for google maps
 	  * @param {Object} addressObject - Lob formatted address object
 	  * @returns {String} String of address
 	  */
@@ -30,6 +40,8 @@ var utils = {
 	},
 
 	/**
+	  * @function getDirectionsPath - Executes HTTP request to Google Maps API to
+	      generate directions path polyline
 	  * @param {Object} origin - Lob formatted address object of origin for driving directions
 	  * @param {Object} destination - Lob formatted address object of destination for driving directions
 	  * @returns {Promise} result - resolves with urlencoded {String} driving direction path
@@ -49,6 +61,8 @@ var utils = {
 	},
 
 	/**
+	  * @function getMap - Accepts path URL encoded string and executes HTTP request to google maps
+	      API to geenrate Short URL of static google map image
 	  * @param {String} path - URLEncoded string of a polygon path representing driving directions
 	  * @returns {Promise} result - resolves with an {Object} containing a Google generated
 	  *   short URL of the static google maps image of driving directions
