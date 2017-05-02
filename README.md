@@ -9,7 +9,7 @@ After cloning this project, install all the dependencies with
 $ npm install
 ```
 
-## Then, modify `config.json` with your own API keys Lob, Google Maps, and Google URL shortner. Finally, start the program by running:
+Then, modify `config.json` with your own API keys Lob, Google Maps, and Google URL shortner. Finally, start the program by running:
 ```
 $ node index
 ```
