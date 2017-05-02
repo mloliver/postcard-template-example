@@ -2,6 +2,8 @@
 
 A sample Node.js program that collects the name and address of a customer with a command line prompt, generates a static image of driving directions with the Google Maps API, and creates a personalized Postcard using an HTML template.
 
+![Postcard-Demo](https://github.com/lob/postcard-template-example/raw/master/images/demo-card.png)
+
 ## Getting Started
 After cloning this project, install all the dependencies with
 
